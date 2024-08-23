@@ -1,0 +1,55 @@
+.page {
+  font-family: Helvetica, sans-serif;
+  color: #ea00ff;
+}
+.page__header {
+  background-color: #2ecc71;
+  padding: 10px;
+}
+.page__header-title {
+  font-size: 2em;
+  margin: 0;
+}
+.page__header-nav {
+  list-style: none;
+  padding: 0;
+}
+.page__header-nav-item {
+  display: inline;
+  margin-right: 10px;
+}
+.page__header-nav-item-link {
+  color: white;
+  text-decoration: none;
+}
+.page__header-nav-item-link:hover {
+  text-decoration: underline;
+}
+.page__content {
+  padding: 20px;
+}
+.page__content-box {
+  background-color: #f266ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.button-primary {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-secondary {
+  background-color: rgb(0, 138, 148);
+  color: rgb(159, 32, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */

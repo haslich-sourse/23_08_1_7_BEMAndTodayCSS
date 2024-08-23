@@ -1,0 +1,62 @@
+//Импорт внешнего файла с перменными
+@import "variables";
+
+.page {
+  font-family: $font-stack;
+  color: $primary-color;
+  //Пример вложенности
+  &__header {
+    background-color: $secondary-color;
+    padding: 10px;
+
+    &-title {
+      font-size: 2em;
+      margin: 0;
+    }
+
+    &-nav {
+      list-style: none;
+      padding: 0;
+
+      &-item {
+        display: inline;
+        margin-right: 10px;
+
+        &-link {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    padding: 20px;
+
+    &-box {
+      background-color: lighten($primary-color, 20%);
+      padding: 20px;
+      border-radius: 10px;
+    }
+  }
+}
+//Использование мискинов
+@mixin button-style($bg-color, $text-color, $bd-radius) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: none;
+  border-radius: $bd-radius;
+  cursor: pointer;
+  font-size: 16px;
+}
+.button-primary {
+  @include button-style(blue, white, 5px);
+}
+.button-secondary {
+  @include button-style(rgb(0, 138, 148), rgb(159, 32, 0), 10px);
+}
